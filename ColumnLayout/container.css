@@ -1,0 +1,27 @@
+/* CSS implementation */
+
+.flex-container {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.columns {
+
+    flex: 1;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+
+}
+
+@media(max-width: 600px) {
+
+    .flex-container {
+
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+
+}
+
+nav .navul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.brandname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons button {
+    border: none;
+    background: #2E7D32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#toggle {
+    display: none;
+}
+
+.hamburger span {
+    height: 4px;
+    background: #000;
+    border-radius: 2px;
+}
+
+.side {
+    position: absolute;
+    top: 140px;
+    right: 0;
+    background: #f0f0f0;
+    width: 200px;
+    padding: 20px;
+    display: none;
+    z-index: 1;
+    display: none;
+}
+
+.list {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list li {
+    margin-bottom: 20px;
+}
+
+#toggle:checked~.side {
+    display: block;
+}
+
+
+@media(max-width: 945px) {
+    nav .navul {
+        display: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .hamburger {
+        width: 35px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 3;
+        position: relative;
+
+    }
+
+
+}
+
+
+
+.Imgmain {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+
+.serviceImg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+
+.Infobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA500;
+}
+
+.Infobox p {
+
+    background-color: #FFA500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: white;
+    padding: 40px 60px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA500;
+
+}
+
+.services h2 {
+    justify-content: center;
+    color: white;
+    padding: 30px 20px;
+}
+
+.services p {
+
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.orginfo {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.form input {
+
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+.form button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFA500;
+
+}
+
+.contactimg {
+    width: 100%;
+    height: 100%
+}
